@@ -9,7 +9,7 @@ import java.util.Map;
  * @date 2022/2/10 15:09
  */
 public class Convert {
-    public static String convert(String s, int numRows) {
+    public String convert(String s, int numRows) {
         if (numRows == 1) {
             return s;
         }
@@ -30,10 +30,5 @@ public class Convert {
             }
         }
         return res.toString();
-    }
-
-    public static void main(String[] args) {
-        String s = "PAYPALISHIRING";
-        convert(s, 4);
     }
 }
